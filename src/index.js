@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './Styles/index.css';
-import './Assets/Montserrat/static/Montserrat-Regular.ttf';
+import './Assets/Fonts/Montserrat/static/Montserrat-Regular.ttf';
 import App from './Components/App';
 
 ReactDOM.render(
