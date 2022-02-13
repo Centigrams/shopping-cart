@@ -14,19 +14,19 @@
 }
 
 .badge {
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 0.5625rem;
+    padding-right: 0.5625rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
 
 .lblCartCount {
-    font-size: 14px;
+    font-size: 0.875rem;
     background: #ff0000;
     color: #fff;
-    padding: 0 5px;
+    padding: 0 0.3125rem;
     vertical-align: top;
-    margin-left: -11px;
-    margin-top: -17px;
+    margin-left: -0.6875rem;
+    margin-top: -1.0625rem;
 }
