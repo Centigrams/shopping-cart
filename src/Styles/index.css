@@ -3,3 +3,9 @@
     padding: 0;
     margin: 0;
 }
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: local("MontserratRegular"),
+    url('../Assets/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
