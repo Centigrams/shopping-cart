@@ -1,0 +1,38 @@
+.homeContainer {
+    background-image: url("../Assets/Images/headphones-on-table.jpg");
+    background-position: center;
+    background-position-y: bottom;
+    height: calc(100vh - 4.6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.homeContent {
+    margin-left: 3rem;
+}
+
+.productName {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'MontserratRegular', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.productDescription {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'MontserratRegular', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.buttonLink {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    height: 2.8rem;
+    width: 8rem;
+}
