@@ -4,7 +4,6 @@ import { IconButton } from '@mui/material';
 import CustomShoppingCartIcon from '../Styles/CustomComponents/CustomShoppingCartIcon';
 import styles from '../Styles/HeaderLinks.module.css';
 
-// TODO: Setup themes with MUI
 function HeaderLinks() {
   return (
     <div className={styles.headerLinksContainer}>
