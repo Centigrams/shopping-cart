@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IconButton } from '@mui/material';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import CustomShoppingCartIcon from '../Styles/CustomComponents/CustomShoppingCartIcon';
 import styles from '../Styles/HeaderLinks.module.css';
 
-// TODO: Checkout button customization
 // TODO: Setup themes with MUI
 function HeaderLinks() {
   return (
@@ -12,8 +11,8 @@ function HeaderLinks() {
       <Link className={styles.links} to="/">HOME</Link>
       <Link className={styles.links} to="/products">PRODUCTS</Link>
       <Link className={styles.links} to="/contact">CONTACT</Link>
-      <IconButton>
-        <ShoppingBagIcon />
+      <IconButton size="large">
+        <CustomShoppingCartIcon />
         <span className={[
           styles.badge,
           styles.lblCartCount,
