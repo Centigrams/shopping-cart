@@ -1,0 +1,37 @@
+.contactContainer {
+    background-image: url("../Assets/Images/headphones-on-paper.jpg");
+    background-position: center;
+    background-position-x: left;
+    height: calc(100vh - 4.6rem);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.messageContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.messagePanel {
+    font-family: 'MontserratRegular', sans-serif;
+    color: white;
+    background: #f44336;
+    padding: 2rem;
+    height: 35rem;
+    width: 40rem;
+    border-radius: 4px;
+}
+
+.infoContainer {
+    padding: 1rem 0 1.5rem 0;
+}
+
+.infoHeader {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
