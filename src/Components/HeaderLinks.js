@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import CustomShoppingCartIcon from '../Styles/CustomComponents/CustomShoppingCartIcon';
 import styles from '../Styles/HeaderLinks.module.css';
-import AppTheme from '../Styles/Apptheme';
+import AppTheme from '../Styles/AppTheme';
 
 function HeaderLinks() {
   const setAsActiveLink = (status) => ({

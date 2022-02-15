@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material';
 import AppHeader from './AppHeader';
-import AppTheme from '../Styles/Apptheme';
+import AppTheme from '../Styles/AppTheme';
 import styles from '../Styles/Layout.module.css';
 
 function Layout() {
