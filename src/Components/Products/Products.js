@@ -8,9 +8,9 @@ import {
 import { Link } from 'react-router-dom';
 import styles from '../../Styles/Products.module.css';
 import CustomProductCard from '../../Styles/CustomComponents/CustomProductCard';
-import HeadphonePhoto from '../../Assets/Images/TAPH805BK_00-IMS-en_PH.jpeg';
-import EarbudPhoto from '../../Assets/Images/TAT1215BK_97-APP-global-001.jpeg';
-import SoundbarPhoto from '../../Assets/Images/TAB5105_37-IMS-en_PH.jpeg';
+import HeadphonePhoto from '../../Assets/Images/small-eran-menashri.jpg';
+import EarbudPhoto from '../../Assets/Images/small-kal-visuals-unsplash.jpg';
+import SoundbarPhoto from '../../Assets/Images/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg';
 
 // TODO: Router for products.
 // TODO: Product Images.
@@ -74,7 +74,7 @@ function Products() {
                   variant="h5"
                   component="div"
                 >
-                  SOUNDBARS
+                  SPEAKERS
                 </Typography>
               </CardContent>
             </CardActionArea>
