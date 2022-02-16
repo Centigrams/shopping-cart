@@ -10,7 +10,7 @@ import styles from '../../Styles/Products.module.css';
 import CustomProductCard from '../../Styles/CustomComponents/CustomProductCard';
 import HeadphonePhoto from '../../Assets/Images/small-eran-menashri.jpg';
 import EarbudPhoto from '../../Assets/Images/small-kal-visuals-unsplash.jpg';
-import SoundbarPhoto from '../../Assets/Images/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg';
+import SpeakersPhoto from '../../Assets/Images/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg';
 
 // TODO: Router for products.
 // TODO: Product Images.
@@ -43,7 +43,7 @@ function Products() {
           </CustomProductCard>
         </Link>
 
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/products/earbuds" style={{ textDecoration: 'none' }}>
           <CustomProductCard raised>
             <CardActionArea>
               <CardMedia
@@ -62,12 +62,12 @@ function Products() {
           </CustomProductCard>
         </Link>
 
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/products/speakers" style={{ textDecoration: 'none' }}>
           <CustomProductCard raised>
             <CardActionArea>
               <CardMedia
                 component="img"
-                image={SoundbarPhoto}
+                image={SpeakersPhoto}
               />
               <CardContent>
                 <Typography
