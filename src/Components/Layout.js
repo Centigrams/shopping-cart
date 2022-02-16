@@ -5,6 +5,7 @@ import AppHeader from './AppHeader';
 import AppTheme from '../Styles/AppTheme';
 import styles from '../Styles/Layout.module.css';
 
+// TODO: Use Typography API for MUI Components
 function Layout() {
   return (
     <ThemeProvider theme={AppTheme}>

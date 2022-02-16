@@ -1,27 +1,85 @@
 import React from 'react';
+import {
+  CardActionArea,
+  CardContent,
+  Typography,
+  CardMedia,
+} from '@mui/material';
+import { Link } from 'react-router-dom';
 import styles from '../../Styles/Products.module.css';
+import CustomProductCard from '../../Styles/CustomComponents/CustomProductCard';
+import HeadphonePhoto from '../../Assets/Images/TAPH805BK_00-IMS-en_PH.jpeg';
+import EarbudPhoto from '../../Assets/Images/TAT1215BK_97-APP-global-001.jpeg';
+import SoundbarPhoto from '../../Assets/Images/TAB5105_37-IMS-en_PH.jpeg';
 
-// TODO: Website layout (refer to Bose's website).
+// TODO: Router for products.
 // TODO: Product Images.
 // TODO: Product Data array.
 // TODO: Product Cards.
-// TODO: Configure Product Filter
 function Products() {
   return (
     <div className={styles.productsContainer}>
       <section className={styles.photoSection}>
-        Placeholder
+        <h1 className={styles.photoSectionTextHeader}>{'Let\'s get started.'}</h1>
       </section>
       <section className={styles.productGroup}>
-        <div className={styles.product}>
-          over ear headphones
-        </div>
-        <div className={styles.product}>
-          on ear headphones
-        </div>
-        <div className={styles.product}>
-          earbuds
-        </div>
+
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <CustomProductCard raised>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                image={HeadphonePhoto}
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  component="div"
+                >
+                  HEADPHONES
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </CustomProductCard>
+        </Link>
+
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <CustomProductCard raised>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                image={EarbudPhoto}
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  component="div"
+                >
+                  EARBUDS
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </CustomProductCard>
+        </Link>
+
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <CustomProductCard raised>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                image={SoundbarPhoto}
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  component="div"
+                >
+                  SOUNDBARS
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </CustomProductCard>
+        </Link>
       </section>
     </div>
   );
