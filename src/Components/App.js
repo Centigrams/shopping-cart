@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
+import NotFound from './NotFound';
 import Home from './Home/Home';
 import Products from './Products/Products';
 import Contact from './Contact/Contact';
@@ -19,6 +20,7 @@ function App() {
           <Route path="products/earbuds" element={<Earbuds />} />
           <Route path="products/speakers" element={<Speakers />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </div>
