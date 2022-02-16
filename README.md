@@ -2,7 +2,9 @@
 
 ## Overview
 
-Sample e-commerce website with react-router
+Sample e-commerce website demonstrating the use of React Router.
+
+Designed for 1920x1080 and 1366x768 screens.
 
 ## Installation
 
