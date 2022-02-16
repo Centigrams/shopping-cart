@@ -24,7 +24,7 @@ function Products() {
       </section>
       <section className={styles.productGroup}>
 
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/products/headphones" style={{ textDecoration: 'none' }}>
           <CustomProductCard raised>
             <CardActionArea>
               <CardMedia
