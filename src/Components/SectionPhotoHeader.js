@@ -1,7 +1,12 @@
 import React from 'react';
 import styles from '../Styles/SectionPhotoHeader.module.css';
 
-function SectionPhotoHeader({ headerPhoto, textHeader }) {
+/**
+ * textColorObject uses CSS inline styling.
+ * Recommended headerPhoto size is 1920x1080.
+ * TextHeader will be displayed in the middle of the section.
+ * */
+function SectionPhotoHeader({ headerPhoto, textHeader, textColorObject }) {
   return (
     <section
       style={{
@@ -9,7 +14,7 @@ function SectionPhotoHeader({ headerPhoto, textHeader }) {
       }}
       className={styles.sectionBackground}
     >
-      <h1 style={{ color: '#0da9ff' }} className={styles.photoSectionTextHeader}>
+      <h1 style={textColorObject} className={styles.photoSectionTextHeader}>
         {textHeader}
       </h1>
     </section>

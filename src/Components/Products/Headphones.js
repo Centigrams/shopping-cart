@@ -1,10 +1,12 @@
 import React from 'react';
-import ProductSelection from '../ProductSelection';
+import SectionPhotoHeader from '../SectionPhotoHeader';
+import HeaderPhoto from '../../Assets/Images/kal-visuals-tBne8kdxzbc-unsplash.jpg';
 
 function Headphones() {
+  const photoSectionTextHeader = 'HEADPHONES';
   return (
     <div>
-      <ProductSelection />
+      <SectionPhotoHeader textColorObject={{ color: 'white' }} headerPhoto={HeaderPhoto} textHeader={photoSectionTextHeader} />
     </div>
   );
 }
