@@ -8,8 +8,8 @@ function Home() {
     <div>
       <div className={styles.homeContainer}>
         <div className={styles.homeContent}>
-          <h1 className={styles.productName}>Sine Wave X200</h1>
-          <h2 className={styles.productDescription}>Designed by Audiophiles. For Audiophiles.</h2>
+          <h1 className={styles.productName}>Betron S2</h1>
+          <h2 className={styles.productDescription}>Superb sound quality.</h2>
           <Button color="secondary" variant="contained">
             <Link to="/products" className={styles.buttonLink}>
               SHOP NOW
