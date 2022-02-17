@@ -8,20 +8,22 @@ import {
 import { Link } from 'react-router-dom';
 import styles from '../../Styles/Products.module.css';
 import CustomProductCard from '../../Styles/CustomComponents/CustomProductCard';
+import SectionHeaderPhoto from '../../Assets/Images/ross-sneddon--gPgeCoA3f4-unsplash.jpg';
 import HeadphonePhoto from '../../Assets/Images/small-eran-menashri.jpg';
 import EarbudPhoto from '../../Assets/Images/small-kal-visuals-unsplash.jpg';
 import SpeakersPhoto from '../../Assets/Images/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg';
+import SectionPhotoHeader from '../SectionPhotoHeader';
 
-// TODO: Router for products.
 // TODO: Product Images.
 // TODO: Product Data array.
 // TODO: Product Cards.
+
 function Products() {
+  const textHeader = "Let's get started.";
+
   return (
     <div className={styles.productsContainer}>
-      <section className={styles.photoSection}>
-        <h1 className={styles.photoSectionTextHeader}>{'Let\'s get started.'}</h1>
-      </section>
+      <SectionPhotoHeader headerPhoto={SectionHeaderPhoto} textHeader={textHeader} />
       <section className={styles.productGroup}>
 
         <Link to="/products/headphones" style={{ textDecoration: 'none' }}>
