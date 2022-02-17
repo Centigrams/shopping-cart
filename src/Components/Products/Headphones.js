@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionPhotoHeader from '../SectionPhotoHeader';
+import SectionPhotoHeader from './SectionPhotoHeader';
 import HeaderPhoto from '../../Assets/Images/kal-visuals-tBne8kdxzbc-unsplash.jpg';
 
 function Headphones() {

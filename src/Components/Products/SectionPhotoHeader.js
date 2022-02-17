@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Styles/SectionPhotoHeader.module.css';
+import styles from '../../Styles/SectionPhotoHeader.module.css';
 
 /**
  * textColorObject uses CSS inline styling.

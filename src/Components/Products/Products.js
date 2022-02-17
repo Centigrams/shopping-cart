@@ -12,7 +12,7 @@ import SectionHeaderPhoto from '../../Assets/Images/ross-sneddon--gPgeCoA3f4-uns
 import HeadphonePhoto from '../../Assets/Images/small-eran-menashri.jpg';
 import EarbudPhoto from '../../Assets/Images/small-kal-visuals-unsplash.jpg';
 import SpeakersPhoto from '../../Assets/Images/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg';
-import SectionPhotoHeader from '../SectionPhotoHeader';
+import SectionPhotoHeader from './SectionPhotoHeader';
 
 // TODO: Product Images.
 // TODO: Product Data array.
@@ -26,7 +26,7 @@ function Products() {
       <SectionPhotoHeader textColorObject={{ color: '#0DA9FF' }} headerPhoto={SectionHeaderPhoto} textHeader={textHeader} />
       <section className={styles.productGroup}>
 
-        <Link to="/products/headphones" style={{ textDecoration: 'none' }}>
+        <Link to="/products/headphonesData" style={{ textDecoration: 'none' }}>
           <CustomProductCard raised>
             <CardActionArea>
               <CardMedia
