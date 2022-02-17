@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Typography } from '@mui/material';
 import CustomAppBar from '../Styles/CustomComponents/CustomAppBar';
-import styles from '../Styles/AppHeader.module.css';
 import linkStyles from '../Styles/HeaderLinks.module.css';
 import HeaderLinks from './HeaderLinks';
 
@@ -10,7 +10,15 @@ function AppHeader() {
     <CustomAppBar>
       <div>
         <Link to="/" className={linkStyles.links}>
-          <h1 className={styles.appName}>SampleStore</h1>
+          <Typography
+            style={{
+              marginLeft: '1.5rem',
+              fontFamily: 'MontserratRegular, sans-serif',
+            }}
+            variant="h4"
+          >
+            SampleStore
+          </Typography>
         </Link>
       </div>
       <HeaderLinks />
