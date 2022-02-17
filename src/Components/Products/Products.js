@@ -26,7 +26,7 @@ function Products() {
       <SectionPhotoHeader textColorObject={{ color: '#0DA9FF' }} headerPhoto={SectionHeaderPhoto} textHeader={textHeader} />
       <section className={styles.productGroup}>
 
-        <Link to="/products/headphonesData" style={{ textDecoration: 'none' }}>
+        <Link to="/products/headphones" style={{ textDecoration: 'none' }}>
           <CustomProductCard raised>
             <CardActionArea>
               <CardMedia
