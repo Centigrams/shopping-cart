@@ -14,10 +14,6 @@ import EarbudPhoto from '../../Assets/Images/small-kal-visuals-unsplash.jpg';
 import SpeakersPhoto from '../../Assets/Images/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg';
 import SectionPhotoHeader from './SectionPhotoHeader';
 
-// TODO: Product Images.
-// TODO: Product Data array.
-// TODO: Product Cards.
-
 function Products() {
   const textHeader = "Let's get started.";
 

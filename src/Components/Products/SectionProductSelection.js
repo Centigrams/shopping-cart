@@ -2,10 +2,8 @@ import React from 'react';
 import styles from '../../Styles/SectionProductSelection.module.css';
 import ProductPreview from './ProductPreview';
 
-// TODO: Reusable product selection page for product preview.
 // Accept product array as prop.
 // Map product array and create product preview cards.
-
 function SectionProductSelection() {
   return (
     <section className={styles.sectionProductSelectionContainer}>
