@@ -12,7 +12,7 @@ const AppTheme = createTheme({
       light: '#66c6ff',
       main: '#1e96d4',
       dark: '#0068a2',
-      contrastText: '#000000',
+      contrastText: '#fff',
     },
   },
 });

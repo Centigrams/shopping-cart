@@ -7,7 +7,7 @@ import AppTheme from '../Styles/AppTheme';
 
 function HeaderLinks() {
   const setAsActiveLink = (status) => ({
-    color: status ? AppTheme.palette.secondary.main : AppTheme.palette.secondary.contrastText,
+    color: status ? AppTheme.palette.secondary.main : AppTheme.palette.primary.contrastText,
   });
 
   return (
