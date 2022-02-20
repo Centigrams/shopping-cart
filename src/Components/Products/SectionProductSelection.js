@@ -18,12 +18,13 @@ function SectionProductSelection({ inventoryData }) {
       </div>
       <div className={styles.productSelectionContainer}>
         <div className={styles.productSelection}>
-          {inventoryData.map((headphone) => (
+          {inventoryData.map((product) => (
             <ProductPreview
-              key={headphone.productId}
-              productName={headphone.productName}
-              productPhoto={headphone.productPhoto}
-              price={headphone.price}
+              key={product.productId}
+              productName={product.productName}
+              productPhoto={product.productPhoto}
+              price={product.price}
+              productObject={product}
             />
           ))}
         </div>

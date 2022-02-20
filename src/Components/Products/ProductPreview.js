@@ -14,6 +14,7 @@ function ProductPreview({
   productName,
   productPhoto,
   price,
+  productObject,
 }) {
   return (
     <CustomProductPreview>
@@ -34,7 +35,12 @@ function ProductPreview({
           $
           {price}
         </PreviewPrice>
-        <Button variant="contained" endIcon={<AddShoppingCart />} color="secondary">
+        <Button
+          variant="contained"
+          endIcon={<AddShoppingCart />}
+          color="secondary"
+          onClick={() => console.log(productObject)}
+        >
           Add to Cart
         </Button>
       </PreviewCardContent>
