@@ -7,28 +7,32 @@ import PreviewCardMedia from '../../Styles/CustomComponents/ProductPreviewCard/P
 import PreviewCardContent from '../../Styles/CustomComponents/ProductPreviewCard/PreviewCardContent';
 import PreviewModelName from '../../Styles/CustomComponents/ProductPreviewCard/PreviewModelName';
 import CustomProductPreview from '../../Styles/CustomComponents/ProductPreviewCard/CustomProductPreview';
-import BetronS2 from '../../Assets/Images/HeadphonesImages/betronS2.jpg';
 import PreviewPrice from '../../Styles/CustomComponents/ProductPreviewCard/PreviewPrice';
 
 // Component for individual products sold.
-function ProductPreview() {
+function ProductPreview({
+  productName,
+  productPhoto,
+  price,
+}) {
   return (
     <CustomProductPreview>
       <PreviewCardMedia
         component="img"
-        image={BetronS2}
+        image={productPhoto}
       />
       <PreviewCardContent>
         <PreviewModelName
-          variant="h4"
+          variant="h5"
           component="div"
         >
-          S2
+          {productName}
         </PreviewModelName>
         <PreviewPrice
           variant="h6"
         >
-          $49.99
+          $
+          {price}
         </PreviewPrice>
         <Button variant="contained" endIcon={<AddShoppingCart />} color="secondary">
           Add to Cart

@@ -2,9 +2,9 @@ import React from 'react';
 import styles from '../../Styles/SectionProductSelection.module.css';
 import ProductPreview from './ProductPreview';
 
-// Accept product array as prop.
-// Map product array and create product preview cards.
-function SectionProductSelection() {
+// Accept product array as prop depending on the link clicked.
+// Create ProductPreview cards for every item in the product array.
+function SectionProductSelection({ inventoryData }) {
   return (
     <section className={styles.sectionProductSelectionContainer}>
       <div className={styles.pageHeaderContainer}>
@@ -18,7 +18,14 @@ function SectionProductSelection() {
       </div>
       <div className={styles.productSelectionContainer}>
         <div className={styles.productSelection}>
-          <ProductPreview />
+          {inventoryData.map((headphone) => (
+            <ProductPreview
+              key={headphone.productId}
+              productName={headphone.productName}
+              productPhoto={headphone.productPhoto}
+              price={headphone.price}
+            />
+          ))}
         </div>
       </div>
     </section>
