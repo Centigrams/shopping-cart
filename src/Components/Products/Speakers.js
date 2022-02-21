@@ -1,9 +1,20 @@
 import React from 'react';
+import SectionPhotoHeader from './SectionPhotoHeader';
+import HeaderPhoto from '../../Assets/Images/john-fornander-yvs7ZH3AZNM-unsplash.jpg';
+import SectionProductSelection from './SectionProductSelection';
+import getSpeakers from '../../Data/SpeakersData';
 
 function Speakers() {
+  const photoSectionTextHeader = 'SPEAKERS';
+  const speakersData = getSpeakers();
   return (
     <div>
-      <h1>Speakers</h1>
+      <SectionPhotoHeader
+        textColorObject={{ color: 'white' }}
+        headerPhoto={HeaderPhoto}
+        textHeader={photoSectionTextHeader}
+      />
+      <SectionProductSelection inventoryData={speakersData} />
     </div>
   );
 }
