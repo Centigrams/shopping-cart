@@ -7,6 +7,7 @@ const earbudsData = [
   {
     productName: 'MOMENTUM TW2',
     productId: 'sennheiser-momentum-tw2',
+    category: 'earbuds',
     price: 219,
     currency: 'USD',
     productPhoto: SennheiserMomentumTW2,
@@ -14,6 +15,7 @@ const earbudsData = [
   {
     productName: 'VIBE 200TWS',
     productId: 'jbl-vibe-200-tws',
+    category: 'earbuds',
     price: 129,
     currency: 'USD',
     productPhoto: JBLVibe200TWS,
@@ -21,6 +23,7 @@ const earbudsData = [
   {
     productName: 'WF 1000XM4',
     productId: 'sony-wf-1000xm4',
+    category: 'earbuds',
     price: 319,
     currency: 'USD',
     productPhoto: SonyWF1000XM4,
