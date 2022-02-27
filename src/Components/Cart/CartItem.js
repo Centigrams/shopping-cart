@@ -1,9 +1,10 @@
 import React from 'react';
+import { IconButton } from '@mui/material';
+import { RemoveCircle, AddCircle } from '@mui/icons-material';
 import styles from '../../Styles/CartItem.module.css';
 import BetronS2 from '../../Assets/Images/HeadphonesImages/betronS2.jpg';
 
 // TODO: Remove hardcoded values
-// TODO: Use SVG for plus and minus
 function CartItem() {
   return (
     <div className={styles.cartItem}>
@@ -24,11 +25,15 @@ function CartItem() {
         </div>
         <div>
           <button type="button" className={styles.addAndSubtractButton}>
-            <h1>-</h1>
+            <IconButton aria-label="subtract item">
+              <RemoveCircle color="secondary" />
+            </IconButton>
           </button>
           <input type="text" className={styles.numberOfItemsInputField} value="1" />
           <button type="button" className={styles.addAndSubtractButton}>
-            <h1>+</h1>
+            <IconButton aria-label="add item">
+              <AddCircle color="secondary" />
+            </IconButton>
           </button>
         </div>
       </div>
