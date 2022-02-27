@@ -14,11 +14,16 @@
     height: 100%;
     background: white;
     font-family: 'MontserratRegular', sans-serif;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+}
+
+.cartPanel::-webkit-scrollbar {
+    display: none;
 }
 
 .mainCart {
     margin: 5.5rem 1rem 0 1rem;
-    height: 100%;
 }
 
 .cartItemHolder {
