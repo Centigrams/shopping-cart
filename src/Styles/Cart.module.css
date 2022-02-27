@@ -23,9 +23,19 @@
 }
 
 .mainCart {
-    margin: 5.5rem 1rem 0 1rem;
+    margin: 5.5rem 1rem 1rem 1rem;
+}
+
+.totalPriceContainer {
+    margin-top: 1rem;
 }
 
 .cartItemHolder {
     margin-top: 2rem;
+}
+
+.actionButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
