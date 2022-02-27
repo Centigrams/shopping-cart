@@ -19,5 +19,8 @@
 .mainCart {
     margin: 5.5rem 1rem 0 1rem;
     height: 100%;
-    width: 100%;
+}
+
+.cartItemHolder {
+    margin-top: 2rem;
 }

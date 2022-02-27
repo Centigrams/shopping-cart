@@ -1,4 +1,5 @@
 import React from 'react';
+import CartItem from './CartItem';
 import cartStyles from '../../Styles/Cart.module.css';
 
 /**
@@ -15,6 +16,9 @@ function Cart() {
       <div className={cartStyles.cartPanel}>
         <div className={cartStyles.mainCart}>
           <h1>Your Cart</h1>
+          <div className={cartStyles.cartItemHolder}>
+            <CartItem />
+          </div>
         </div>
       </div>
     </div>
