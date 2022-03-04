@@ -1,11 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { IconButton } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { toggleCart } from '../features/Cart/cartSlice';
 import CustomShoppingCartIcon from '../Styles/CustomComponents/CustomShoppingCartIcon';
 import styles from '../Styles/HeaderLinks.module.css';
 import AppTheme from '../Styles/AppTheme';
 
 function HeaderLinks() {
+  const dispatch = useDispatch();
+
   const setAsActiveLink = (status) => ({
     color: status ? AppTheme.palette.secondary.main : AppTheme.palette.primary.contrastText,
   });
@@ -33,7 +37,10 @@ function HeaderLinks() {
       >
         CONTACT
       </NavLink>
-      <IconButton size="large">
+      <IconButton
+        size="large"
+        onClick={() => dispatch(toggleCart())}
+      >
         <CustomShoppingCartIcon />
         <span className={[
           styles.badge,
