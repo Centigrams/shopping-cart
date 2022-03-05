@@ -3,6 +3,8 @@ import {
   Button,
 } from '@mui/material';
 import { AddShoppingCart } from '@mui/icons-material';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../features/Cart/cartSlice';
 import PreviewCardMedia from '../../Styles/CustomComponents/ProductPreviewCard/PreviewCardMedia';
 import PreviewCardContent from '../../Styles/CustomComponents/ProductPreviewCard/PreviewCardContent';
 import PreviewModelName from '../../Styles/CustomComponents/ProductPreviewCard/PreviewModelName';
@@ -16,6 +18,7 @@ function ProductPreview({
   price,
   productObject,
 }) {
+  const dispatch = useDispatch();
   return (
     <CustomProductPreview>
       <PreviewCardMedia
@@ -39,7 +42,7 @@ function ProductPreview({
           variant="contained"
           endIcon={<AddShoppingCart />}
           color="secondary"
-          onClick={() => console.log(productObject)}
+          onClick={() => dispatch(addToCart(productObject))}
         >
           Add to Cart
         </Button>
