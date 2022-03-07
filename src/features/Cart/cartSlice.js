@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const cartIsOpenInitialValue = false;
 const cartInitialValue = [];
 
-// TODO: Create changeQuantity reducer and do all cart filtering logic in addToCart.
+// TODO: Create changeQuantity reducer.
 export const cartSlice = createSlice({
   name: 'cart',
   initialState: {

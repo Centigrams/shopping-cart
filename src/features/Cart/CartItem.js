@@ -11,6 +11,7 @@ function CartItem({
   productPhoto,
   quantity,
 }) {
+  const categoryCapitalized = category.charAt(0).toUpperCase() + category.slice(1);
   return (
     <div className={styles.cartItem}>
       <div>
@@ -22,7 +23,7 @@ function CartItem({
       </div>
       <div className={styles.itemRightPanel}>
         <div className={styles.itemRightPanelTop}>
-          <h3>{category}</h3>
+          <h3>{categoryCapitalized}</h3>
           <p>
             $
             {price}
@@ -31,22 +32,14 @@ function CartItem({
         <div>
           <p>{productName}</p>
         </div>
-        <div>
-          <button type="button" className={styles.addAndSubtractButton}>
-            <IconButton aria-label="subtract item">
-              <RemoveCircle color="secondary" />
-            </IconButton>
-          </button>
-          <input
-            type="text"
-            className={styles.numberOfItemsInputField}
-            value={quantity}
-          />
-          <button type="button" className={styles.addAndSubtractButton}>
-            <IconButton aria-label="add item">
-              <AddCircle color="secondary" />
-            </IconButton>
-          </button>
+        <div className={styles.quantityContainer}>
+          <IconButton aria-label="subtract item">
+            <RemoveCircle color="secondary" />
+          </IconButton>
+          <p>{quantity}</p>
+          <IconButton aria-label="add item">
+            <AddCircle color="secondary" />
+          </IconButton>
         </div>
       </div>
     </div>
