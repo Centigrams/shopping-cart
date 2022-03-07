@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.955aae15.css",
+    "main.js": "/static/js/main.a54bb88e.js",
+    "static/media/JBL-IRX115S.png": "/static/media/JBL-IRX115S.5186a6a49874ad88956e.png",
+    "static/media/sennheiser-momentum-true-wireless-2-premium-in-ear.jpg": "/static/media/sennheiser-momentum-true-wireless-2-premium-in-ear.eabe11355544038a445c.jpg",
+    "static/media/sennheiserHD800S.jpg": "/static/media/sennheiserHD800S.8c50842cd1e2ab03d858.jpg",
+    "static/media/john-fornander-yvs7ZH3AZNM-unsplash.jpg": "/static/media/john-fornander-yvs7ZH3AZNM-unsplash.05591c18cc70d55528aa.jpg",
+    "static/media/kal-visuals-tBne8kdxzbc-unsplash.jpg": "/static/media/kal-visuals-tBne8kdxzbc-unsplash.0a04de604fe89aec8aaa.jpg",
+    "static/media/BeyerDynamicDT770PRO.jpg": "/static/media/BeyerDynamicDT770PRO.ff636c0521aabcf04fcc.jpg",
+    "static/media/ross-sneddon--gPgeCoA3f4-unsplash.jpg": "/static/media/ross-sneddon--gPgeCoA3f4-unsplash.9cc2e8dd6e77f31d1751.jpg",
+    "static/media/marshall-emberton.jpg": "/static/media/marshall-emberton.c0547ce0581ececdbb38.jpg",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
+    "static/media/headphones-on-table.jpg": "/static/media/headphones-on-table.f22f1584bd646c162b15.jpg",
+    "static/media/yamaha-s215v-concert-club-series-carpeted-dual-15-inch-two-way-loudspeaker.jpg": "/static/media/yamaha-s215v-concert-club-series-carpeted-dual-15-inch-two-way-loudspeaker.48aadea682e3370fa109.jpg",
+    "static/media/LD0005912976_1.jpg": "/static/media/LD0005912976_1.8e9c502df88bd6746c97.jpg",
+    "static/media/eran-menashri-Odq8y1_BtE8-unsplash.jpg": "/static/media/eran-menashri-Odq8y1_BtE8-unsplash.e0d7b871f3d5086f210e.jpg",
+    "static/media/sony-wf-1000xm4.jpg": "/static/media/sony-wf-1000xm4.db60ee09f8b83d65d142.jpg",
+    "static/media/small-john-fornander-yvs7ZH3AZNM-unsplash.jpg": "/static/media/small-john-fornander-yvs7ZH3AZNM-unsplash.f511bee0cdf579a5e6fc.jpg",
+    "static/media/betronS2.jpg": "/static/media/betronS2.503368d1bf03688abef0.jpg",
+    "static/media/small-eran-menashri.jpg": "/static/media/small-eran-menashri.c5974f96656b7edda46a.jpg",
+    "static/media/headphones-on-paper.jpg": "/static/media/headphones-on-paper.ca803003c45b82eb073d.jpg",
+    "static/media/small-kal-visuals-unsplash.jpg": "/static/media/small-kal-visuals-unsplash.b615e31a2e1b05fc99b6.jpg",
+    "index.html": "/index.html",
+    "main.955aae15.css.map": "/static/css/main.955aae15.css.map",
+    "main.a54bb88e.js.map": "/static/js/main.a54bb88e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.955aae15.css",
+    "static/js/main.a54bb88e.js"
+  ]
+}
