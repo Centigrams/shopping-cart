@@ -24,6 +24,7 @@ function Cart() {
       price={item.price}
       productName={item.productName}
       productPhoto={item.productPhoto}
+      quantity={item.quantity}
     />
   ));
 

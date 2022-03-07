@@ -9,6 +9,7 @@ function CartItem({
   price,
   productName,
   productPhoto,
+  quantity,
 }) {
   return (
     <div className={styles.cartItem}>
@@ -36,7 +37,11 @@ function CartItem({
               <RemoveCircle color="secondary" />
             </IconButton>
           </button>
-          <input type="text" className={styles.numberOfItemsInputField} value="1" />
+          <input
+            type="text"
+            className={styles.numberOfItemsInputField}
+            value={quantity}
+          />
           <button type="button" className={styles.addAndSubtractButton}>
             <IconButton aria-label="add item">
               <AddCircle color="secondary" />

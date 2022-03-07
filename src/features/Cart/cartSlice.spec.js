@@ -32,6 +32,7 @@ describe('Add to cart', () => {
       price: 59,
       currency: 'USD',
       productPhoto: BetronS2,
+      quantity: 1,
     };
 
     expect(cartReducer(previousState, addToCart(productObject)))
@@ -44,6 +45,7 @@ describe('Add to cart', () => {
             price: 59,
             currency: 'USD',
             productPhoto: BetronS2,
+            quantity: 1,
           },
         ],
       });
@@ -59,6 +61,7 @@ describe('Add to cart', () => {
           price: 59,
           currency: 'USD',
           productPhoto: BetronS2,
+          quantity: 1,
         },
       ],
     };
@@ -70,6 +73,7 @@ describe('Add to cart', () => {
       price: 219,
       currency: 'USD',
       productPhoto: SennheiserMomentumTW2,
+      quantity: 1,
     };
 
     expect(cartReducer(previousState, addToCart(differentProductObject)))
@@ -82,6 +86,7 @@ describe('Add to cart', () => {
             price: 59,
             currency: 'USD',
             productPhoto: BetronS2,
+            quantity: 1,
           },
           {
             productName: 'MOMENTUM TW2',
@@ -90,6 +95,48 @@ describe('Add to cart', () => {
             price: 219,
             currency: 'USD',
             productPhoto: SennheiserMomentumTW2,
+            quantity: 1,
+          },
+        ],
+      });
+  });
+
+  test('Add same product to cart without creating another object', () => {
+    const previousState = {
+      cart: [
+        {
+          productName: 'S2',
+          productId: 'betron-s2',
+          category: 'headphones',
+          price: 59,
+          currency: 'USD',
+          productPhoto: BetronS2,
+          quantity: 1,
+        },
+      ],
+    };
+
+    const productObject = {
+      productName: 'S2',
+      productId: 'betron-s2',
+      category: 'headphones',
+      price: 59,
+      currency: 'USD',
+      productPhoto: BetronS2,
+      quantity: 1,
+    };
+
+    expect(cartReducer(previousState, addToCart(productObject)))
+      .toEqual({
+        cart: [
+          {
+            productName: 'S2',
+            productId: 'betron-s2',
+            category: 'headphones',
+            price: 59,
+            currency: 'USD',
+            productPhoto: BetronS2,
+            quantity: 2,
           },
         ],
       });

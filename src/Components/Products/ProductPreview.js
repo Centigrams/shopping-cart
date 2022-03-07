@@ -42,7 +42,12 @@ function ProductPreview({
           variant="contained"
           endIcon={<AddShoppingCart />}
           color="secondary"
-          onClick={() => dispatch(addToCart(productObject))}
+          onClick={() => dispatch(addToCart(
+            {
+              ...productObject,
+              quantity: 1,
+            },
+          ))}
         >
           Add to Cart
         </Button>
