@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
-import { checkoutItems } from './cartSlice';
+import { Link } from 'react-router-dom';
+import { checkoutItems, toggleCart } from './cartSlice';
 import CartItem from './CartItem';
 import cartStyles from '../../Styles/Cart.module.css';
 
@@ -57,17 +58,19 @@ function Cart() {
             >
               CHECKOUT
             </Button>
-            <Button
-              variant="outlined"
-              color="secondary"
-              style={{
-                width: '16rem',
-                height: '3.5rem',
-                fontSize: '1.3rem',
-              }}
-            >
-              BROWSE PRODUCTS
-            </Button>
+            <Link to="/products" style={{ textDecoration: 'none' }} onClick={() => dispatch(toggleCart())}>
+              <Button
+                variant="outlined"
+                color="secondary"
+                style={{
+                  width: '16rem',
+                  height: '3.5rem',
+                  fontSize: '1.3rem',
+                }}
+              >
+                BROWSE PRODUCTS
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
