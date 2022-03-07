@@ -43,19 +43,22 @@ function Cart() {
             </p>
           </div>
           <div className={cartStyles.actionButtonsContainer}>
-            <Button
-              variant="contained"
-              color="secondary"
-              style={{
-                width: '16rem',
-                height: '3.5rem',
-                fontSize: '1.3rem',
-                marginBottom: '1rem',
-              }}
-              onClick={() => dispatch(checkoutItems())}
-            >
-              CHECKOUT
-            </Button>
+            { cartArray.length === 0
+              ? null : (
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  style={{
+                    width: '16rem',
+                    height: '3.5rem',
+                    fontSize: '1.3rem',
+                    marginBottom: '1rem',
+                  }}
+                  onClick={() => dispatch(checkoutItems())}
+                >
+                  CHECKOUT
+                </Button>
+              )}
             <Link to="/products" style={{ textDecoration: 'none' }} onClick={() => dispatch(toggleCart())}>
               <Button
                 variant="outlined"
