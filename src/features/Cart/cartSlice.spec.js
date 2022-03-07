@@ -3,6 +3,7 @@ import cartReducer, {
   addToCart,
   decreaseQuantity,
   increaseQuantity,
+  checkoutItems,
 } from './cartSlice';
 import BetronS2 from '../../Assets/Images/HeadphonesImages/betronS2.jpg';
 import SennheiserMomentumTW2
@@ -195,6 +196,35 @@ describe('Item quantity change', () => {
           quantity: 2,
         },
       ],
+    });
+  });
+
+  test('Cart is cleared when checkout is checked', () => {
+    const previousState = {
+      cart: [
+        {
+          productName: 'S2',
+          productId: 'betron-s2',
+          category: 'headphones',
+          price: 59,
+          currency: 'USD',
+          productPhoto: BetronS2,
+          quantity: 1,
+        },
+        {
+          productName: 'MOMENTUM TW2',
+          productId: 'sennheiser-momentum-tw2',
+          category: 'earbuds',
+          price: 219,
+          currency: 'USD',
+          productPhoto: SennheiserMomentumTW2,
+          quantity: 1,
+        },
+      ],
+    };
+
+    expect(cartReducer(previousState, checkoutItems())).toEqual({
+      cart: [],
     });
   });
 });

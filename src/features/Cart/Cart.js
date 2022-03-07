@@ -1,13 +1,15 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { checkoutItems } from './cartSlice';
 import CartItem from './CartItem';
 import cartStyles from '../../Styles/Cart.module.css';
 
 // TODO: Cart should show a shopping cart icon in the middle if empty.
 // TODO: Cart must go to products page when browse products is clicked.
-// TODO: Cart must empty when checkout is clicked.
 function Cart() {
+  const dispatch = useDispatch();
+
   const cartArray = useSelector((state) => state.cart.cart);
 
   const cartItems = cartArray.map((item) => (
@@ -26,6 +28,7 @@ function Cart() {
     const totalPerItem = product.quantity * product.price;
     return total + totalPerItem;
   }, 0);
+
   return (
     <div className={cartStyles.cartBackground}>
       <div className={cartStyles.cartPanel}>
@@ -50,6 +53,7 @@ function Cart() {
                 fontSize: '1.3rem',
                 marginBottom: '1rem',
               }}
+              onClick={() => dispatch(checkoutItems())}
             >
               CHECKOUT
             </Button>
