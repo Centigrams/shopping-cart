@@ -8,8 +8,6 @@ import cartStyles from '../../Styles/Cart.module.css';
 // TODO: Cart must compute total price.
 // TODO: Cart must go to products page when browse products is clicked.
 // TODO: Cart must empty when checkout is clicked.
-// TODO: Cart must be able to display number of same products in input.
-// TODO: Cart must not repeat displayed item.
 function Cart() {
   const cartArray = useSelector((state) => state.cart.cart);
   /**

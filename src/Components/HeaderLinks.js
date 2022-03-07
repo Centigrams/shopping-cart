@@ -14,7 +14,6 @@ function HeaderLinks() {
     color: status ? AppTheme.palette.secondary.main : AppTheme.palette.primary.contrastText,
   });
 
-  // TODO: Cart must display total amount of items in cart.
   return (
     <div className={styles.headerLinksContainer}>
       <NavLink

@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const cartIsOpenInitialValue = false;
 const cartInitialValue = [];
 
+// TODO: Cart must display total amount of items in cart.
 export const cartSlice = createSlice({
   name: 'cart',
   initialState: {

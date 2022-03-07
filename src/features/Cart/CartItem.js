@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import styles from '../../Styles/CartItem.module.css';
 import { increaseQuantity, decreaseQuantity } from './cartSlice';
 
-// TODO: Cart item must be able to increment number of same products.
 function CartItem({
   category,
   price,
