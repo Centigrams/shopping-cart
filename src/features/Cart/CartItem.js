@@ -1,7 +1,9 @@
 import React from 'react';
 import { IconButton } from '@mui/material';
 import { RemoveCircle, AddCircle } from '@mui/icons-material';
+import { useDispatch } from 'react-redux';
 import styles from '../../Styles/CartItem.module.css';
+import { increaseQuantity, decreaseQuantity } from './cartSlice';
 
 // TODO: Cart item must be able to increment number of same products.
 function CartItem({
@@ -10,7 +12,9 @@ function CartItem({
   productName,
   productPhoto,
   quantity,
+  productId,
 }) {
+  const dispatch = useDispatch();
   const categoryCapitalized = category.charAt(0).toUpperCase() + category.slice(1);
   return (
     <div className={styles.cartItem}>
@@ -33,11 +37,17 @@ function CartItem({
           <p>{productName}</p>
         </div>
         <div className={styles.quantityContainer}>
-          <IconButton aria-label="subtract item">
+          <IconButton
+            aria-label="subtract item"
+            onClick={() => dispatch(decreaseQuantity(productId))}
+          >
             <RemoveCircle color="secondary" />
           </IconButton>
           <p>{quantity}</p>
-          <IconButton aria-label="add item">
+          <IconButton
+            aria-label="add item"
+            onClick={() => dispatch(increaseQuantity(productId))}
+          >
             <AddCircle color="secondary" />
           </IconButton>
         </div>

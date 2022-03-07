@@ -3,7 +3,6 @@ import { createSlice } from '@reduxjs/toolkit';
 const cartIsOpenInitialValue = false;
 const cartInitialValue = [];
 
-// TODO: Create changeQuantity reducer.
 export const cartSlice = createSlice({
   name: 'cart',
   initialState: {
@@ -33,9 +32,28 @@ export const cartSlice = createSlice({
         state.cart.push(action.payload);
       }
     },
+    increaseQuantity: (state, action) => {
+      const increasedProduct = state.cart.find((product) => product.productId === action.payload);
+      increasedProduct.quantity += 1;
+    },
+    decreaseQuantity: (state, action) => {
+      const decreasedProduct = state.cart.find((product) => product.productId === action.payload);
+      if (decreasedProduct.quantity <= 1) {
+        state.cart = state.cart.filter(
+          (product) => product.productId !== decreasedProduct.productId,
+        );
+      } else {
+        decreasedProduct.quantity -= 1;
+      }
+    },
   },
 });
 
-export const { toggleCart, addToCart } = cartSlice.actions;
+export const {
+  toggleCart,
+  addToCart,
+  increaseQuantity,
+  decreaseQuantity,
+} = cartSlice.actions;
 
 export default cartSlice.reducer;

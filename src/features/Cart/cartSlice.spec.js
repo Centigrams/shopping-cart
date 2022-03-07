@@ -1,4 +1,9 @@
-import cartReducer, { toggleCart, addToCart } from './cartSlice';
+import cartReducer, {
+  toggleCart,
+  addToCart,
+  decreaseQuantity,
+  increaseQuantity,
+} from './cartSlice';
 import BetronS2 from '../../Assets/Images/HeadphonesImages/betronS2.jpg';
 import SennheiserMomentumTW2
   from '../../Assets/Images/EarbudsImages/sennheiser-momentum-true-wireless-2-premium-in-ear.jpg';
@@ -140,5 +145,56 @@ describe('Add to cart', () => {
           },
         ],
       });
+  });
+});
+
+describe('Item quantity change', () => {
+  test('Item is removed from cart if quantity is 0', () => {
+    const previousState = {
+      cart: [
+        {
+          productName: 'S2',
+          productId: 'betron-s2',
+          category: 'headphones',
+          price: 59,
+          currency: 'USD',
+          productPhoto: BetronS2,
+          quantity: 1,
+        },
+      ],
+    };
+
+    expect(cartReducer(previousState, decreaseQuantity('betron-s2'))).toEqual({
+      cart: [],
+    });
+  });
+
+  test('Item quantity can be increased', () => {
+    const previousState = {
+      cart: [
+        {
+          productName: 'S2',
+          productId: 'betron-s2',
+          category: 'headphones',
+          price: 59,
+          currency: 'USD',
+          productPhoto: BetronS2,
+          quantity: 1,
+        },
+      ],
+    };
+    expect(cartReducer(previousState, increaseQuantity('betron-s2'))).toEqual({
+      cart: [
+        {
+          productName: 'S2',
+          productId: 'betron-s2',
+          category: 'headphones',
+          price: 59,
+          currency: 'USD',
+          productPhoto: BetronS2,
+          quantity: 2,
+        },
+      ],
+    });
   });
 });
