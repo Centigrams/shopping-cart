@@ -7,7 +7,6 @@ import CustomShoppingCartIcon from '../Styles/CustomComponents/CustomShoppingCar
 import styles from '../Styles/HeaderLinks.module.css';
 import AppTheme from '../Styles/AppTheme';
 
-// TODO: Cart must display total amount of items in cart.
 function HeaderLinks() {
   const dispatch = useDispatch();
   const cartArray = useSelector((state) => state.cart.cart);
