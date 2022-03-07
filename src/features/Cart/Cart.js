@@ -6,8 +6,6 @@ import { checkoutItems, toggleCart } from './cartSlice';
 import CartItem from './CartItem';
 import cartStyles from '../../Styles/Cart.module.css';
 
-// TODO: Cart should show a shopping cart icon in the middle if empty.
-// TODO: Cart must go to products page when browse products is clicked.
 function Cart() {
   const dispatch = useDispatch();
 
